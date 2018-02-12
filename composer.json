@@ -1,0 +1,47 @@
+{
+    "name": "beesoft/laravel-notifications-pusher",
+    "description": "Laravel Notifications Pusher",
+    "keywords": [
+        "laravel",
+        "notifications",
+        "pusher"
+    ],
+    "homepage": "https://github.com/beherochulin/laravel-notifications-pusher",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "beesoft",
+            "email": "beherochuling@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+
+        "illuminate/events": ">=5.3",
+        "illuminate/notifications": ">=5.3",
+        "illuminate/queue": ">=5.3",
+        "illuminate/support": ">=5.3",
+
+        "pusher/pusher-php-server": ">=3.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\PusherPushNotifications\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationChannels\\PusherPushNotifications\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
